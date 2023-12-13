@@ -10,7 +10,7 @@ export default defineConfig({
       manifest: {
         short_name: "Memory Games",
         name: "Memory Games",
-        start_url: "/",
+        start_url: process.env.PUBLIC_URL+"/",
         display: "standalone",
         theme_color: "#455a64",
         background_color: "#455a64",

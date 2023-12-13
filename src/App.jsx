@@ -11,15 +11,6 @@ import Visualizing from "./Components/Screens/Visualizing";
 import Predictions from "./Components/Screens/Predictions";
 
 function App() {
-  // const navigate = useNavigate();
-
-  // useEffect(() => {
-  //   const token = sessionStorage.getItem("token");
-  //   if (!token) {
-  //     navigate("/signin");
-  //   }
-  // }, [navigate]);
-
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -27,7 +18,7 @@ function App() {
         <div style={{ position: "relative", zIndex: 1 }}>
           <AppBarComponent />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
             <Route path="/visualizing/*" element={<Visualizing />} />
             <Route path="/reaction/*" element={<Reaction />} />
             <Route path="/predictions/*" element={<Predictions />} />
