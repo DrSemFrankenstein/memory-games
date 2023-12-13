@@ -18,10 +18,19 @@ function App() {
         <div style={{ position: "relative", zIndex: 1 }}>
           <AppBarComponent />
           <Routes>
-            <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
-            <Route path="/visualizing/*" element={<Visualizing />} />
-            <Route path="/reaction/*" element={<Reaction />} />
-            <Route path="/predictions/*" element={<Predictions />} />
+            <Route path={import.meta.env.BASE_URL} element={<Home />} />
+            <Route
+              path={import.meta.env.BASE_URL + "visualizing/*"}
+              element={<Visualizing />}
+            />
+            <Route
+              path={import.meta.env.BASE_URL + "reaction/*"}
+              element={<Reaction />}
+            />
+            <Route
+              path={import.meta.env.BASE_URL + "predictions/*"}
+              element={<Predictions />}
+            />
           </Routes>
           <Footer />
         </div>

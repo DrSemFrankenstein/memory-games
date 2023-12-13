@@ -19,11 +19,11 @@ export default function Reaction() {
 
   const updateGameComponent = () => {
     switch (window.location.pathname) {
-      case "/reaction/fighterpilotgame":
+      case `${import.meta.env.BASE_URL + "reaction/fighterpilotgame"}`:
         setGameComponent(<FighterPilotGame />);
         scrollToTop();
         break;
-      case "/reaction/redcircle":
+      case `${import.meta.env.BASE_URL + "reaction/redcircle"}`:
         setGameComponent(<RedCircleGame />);
         scrollToTop();
         break;
@@ -39,7 +39,7 @@ export default function Reaction() {
       Description:
         "Fighter Pilot Challenge is a brain-training game that enhances cognitive skills such as hand-eye coordination, spatial awareness, reaction time, problem-solving, and more. Players must navigate their rectangle through a maze of moving obstacles, requiring focus, strategy, and quick thinking. This engaging game not only provides mental stimulation but also promotes stress management, time management, and resilience, making it an enjoyable and beneficial activity for sharpening cognitive abilities.",
       Image: fighterpilotgame,
-      path: "/reaction/fighterpilotgame",
+      path: "reaction/fighterpilotgame",
       action: "PLAY",
     },
     {
@@ -47,7 +47,7 @@ export default function Reaction() {
       Description:
         "This reaction game, involving double-tapping a button upon seeing circle shapes, is beneficial for improving cognitive functions in several ways. It enhances visual perception and attention to detail by requiring quick recognition of specific shapes. Additionally, it boosts hand-eye coordination and reflexes, as players must respond rapidly and accurately. This exercise is particularly effective for sharpening focus and reaction speed, making it a valuable tool for brain training.",
       Image: redcircle,
-      path: "/reaction/redcircle",
+      path: "reaction/redcircle",
       action: "PLAY",
     },
   ];

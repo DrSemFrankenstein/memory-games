@@ -19,11 +19,11 @@ export default function Visualizing() {
 
   const updateGameComponent = () => {
     switch (window.location.pathname) {
-      case "/visualizing/randomwords":
+      case `${import.meta.env.BASE_URL + "visualizing/randomwords"}`:
         setGameComponent(<RandomWords />);
         scrollToTop();
         break;
-      case "/visualizing/memorycards":
+      case `${import.meta.env.BASE_URL + "visualizing/memorycards"}`:
         setGameComponent(<MemoryCards />);
         scrollToTop();
         break;
@@ -40,7 +40,7 @@ export default function Visualizing() {
       Description:
         "Visualizing words is a potent memory training technique. It involves creating vivid mental images associated with the words you wish to remember. This method enhances memory retention by engaging the brain's imaginative and associative capabilities. It's particularly effective for learning new vocabulary, complex concepts, or sequential information, as the mental imagery created makes recall easier and more intuitive. By converting abstract words into concrete images, visualizing words strengthens memory, improves focus, and aids in long-term retention of information.",
       Image: randomwords,
-      path: "/visualizing/randomwords",
+      path: "visualizing/randomwords",
       action: "PLAY",
     },
     {
@@ -48,7 +48,7 @@ export default function Visualizing() {
       Description:
         "Memory Card games are excellent for enhancing cognitive abilities, particularly memory and concentration. By challenging players to match pairs of cards, these games stimulate the brain, improve pattern recognition, and strengthen short-term memory. They are also beneficial for all ages, helping in cognitive development in children and maintaining mental agility in adults.",
       Image: memorycards,
-      path: "/visualizing/memorycards",
+      path: "visualizing/memorycards",
       action: "PLAY",
     },
   ];

@@ -12,7 +12,13 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-export default function AlbumLayout({ cards, title, subtitle, info, updateGameComponent }) {
+export default function AlbumLayout({
+  cards,
+  title,
+  subtitle,
+  info,
+  updateGameComponent,
+}) {
   const navigate = useNavigate();
   return (
     <main>
@@ -57,7 +63,7 @@ export default function AlbumLayout({ cards, title, subtitle, info, updateGameCo
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  navigate(card.path);
+                  navigate(import.meta.env.BASE_URL + card.path);
                   updateGameComponent();
                 }}
               >
@@ -76,14 +82,16 @@ export default function AlbumLayout({ cards, title, subtitle, info, updateGameCo
                   <Typography>{card.Description}</Typography>
                 </CardContent>
                 <CardActions>
-                  <Button variant="contained" fullWidth>{card.action}</Button>
+                  <Button variant="contained" fullWidth>
+                    {card.action}
+                  </Button>
                 </CardActions>
               </Card>
             </Grid>
           ))}
         </Grid>
       </Container>
-      <Container maxWidth="lg" sx={{mt:5}}>
+      <Container maxWidth="lg" sx={{ mt: 5 }}>
         <Typography
           variant="h5"
           align="center"

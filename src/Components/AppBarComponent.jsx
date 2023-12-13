@@ -11,14 +11,17 @@ export default function AppBarComponent() {
     // <AppBar position="relative">
     <AppBar position="fixed">
       <Toolbar>
-        <MyCustomIcon mysvgicon={brainIconPath} onClick={() => navigate("/")} />
+        <MyCustomIcon
+          mysvgicon={brainIconPath}
+          onClick={() => navigate(import.meta.env.BASE_URL)}
+        />
         <Typography
           variant="h6"
           color="inherit"
           noWrap
           sx={{ ml: 1 }}
           style={{ cursor: "pointer" }}
-          onClick={() => navigate("/")}
+          onClick={() => navigate(import.meta.env.BASE_URL)}
         >
           Memory Games
         </Typography>

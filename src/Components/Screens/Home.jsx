@@ -10,7 +10,7 @@ const cards = [
     Description:
       "The visual mnemonic technique involves creating a mental image that interlinks vivid representations of each word in a memorable scene, leveraging the brain's ability to better recall visuals and spatial relationships to enhance memory retention.",
     Image: visualizing,
-    path: "/visualizing",
+    path: "visualizing",
     action: "MORE",
   },
   {
@@ -18,7 +18,7 @@ const cards = [
     Description:
       "Reaction games are excellent for brain training as they challenge and improve your ability to respond quickly and accurately to stimuli. These games enhance your reaction time, hand-eye coordination, and cognitive processing speed. By engaging in reaction games, you can boost your mental alertness and sharpen your reflexes, skills that are valuable in various real-life situations, from driving to decision-making in fast-paced environments.This reaction game, involving double-tapping a button upon seeing circle shapes, is beneficial for improving cognitive functions in several ways. It enhances visual perception and attention to detail by requiring quick recognition of specific shapes. Additionally, it boosts hand-eye coordination and reflexes, as players must respond rapidly and accurately. This exercise is particularly effective for sharpening focus and reaction speed, making it a valuable tool for brain training.",
     Image: reaction,
-    path: "/reaction",
+    path: "reaction",
     action: "MORE",
   },
   {
@@ -26,7 +26,7 @@ const cards = [
     Description:
       "This method of brain training, which focuses on making predictions, is beneficial for enhancing critical thinking and foresight. By anticipating future events and planning accordingly, it stimulates strategic thinking and problem-solving abilities. This exercise also helps in improving mental flexibility and the capacity to adapt to new information, which are crucial skills for decision-making and planning in everyday life.",
     Image: predictions,
-    path: "/predictions",
+    path: "predictions",
     action: "MORE",
   },
 ];
