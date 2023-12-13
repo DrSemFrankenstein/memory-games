@@ -1,0 +1,41 @@
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;  /* Fixed width */
+    height: 80px; /* Fixed height */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box; /* Include padding and border in width/height */
+  }
+  
+  .fa {
+    font-size: 2rem;
+  }
+  
+  .card.selected {
+    background-color: #e9e9e900;
+  }
+  
+  .memory-game {
+    text-align: center;
+  }
+  
+  .game-controls {
+    margin-bottom: 20px;
+  }
+  
+  .game-controls button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
